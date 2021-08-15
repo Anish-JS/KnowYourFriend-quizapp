@@ -34,8 +34,17 @@ var question_bank=[
 
 ]
 
+var topScorers=[
+  {
+    name:"Anish",
+    score:7
+  },
+  {
+    name:"Pavan",
+    score:6
+  }
+];
 
-var players=[]
 
 
 var userName=readlineSync.question("What is your name? ")
@@ -67,4 +76,4 @@ for(i=0;i<question_bank.length;i++){
 
 console.log("your final score is "+score+" thank you for playing!")
 
-
+for(topScore of topScorers) console.log(topScore.name+":"+topScore.score)
